@@ -10,6 +10,10 @@ namespace Aplicacion2
     {
         static void Main(string[] args)
         {
+
+            #region CONTADOR Y ACOMULADOR
+            // CONTADOR Y ACUMULADOR
+
             //int contador1=0;
             //Console.WriteLine("Contador1");
             //contador1 = contador1 + 4;//4
@@ -44,7 +48,9 @@ namespace Aplicacion2
             //Console.WriteLine(acumulador);
             //acumulador = acumulador + 4;//18
             //Console.WriteLine(acumulador);
+            #endregion
 
+            #region PROMEDIO SIN CICLOS
             //calcular el promedio de 5 calificaciones sin ciclos
             //int c1, c2, c3, c4, c5, promedio;
 
@@ -61,26 +67,67 @@ namespace Aplicacion2
 
             //promedio = (c1 + c2 + c3 + c4 + c5) / 5;
 
-            //Console.WriteLine("tu promedio es "+promedio);
+            //Console.WriteLine("tu promedio es "+promedio);  
+            #endregion
+           
+            #region CICLO FOR
 
-            //ciclo for
-            int Ncalificaciones =0;
-            Console.WriteLine("Cuantas calificaciones va a promediar");
-            Ncalificaciones = Convert.ToInt32(Console.ReadLine());
+            //CICLO FOR
 
+            //EJEMPLO 1
+            //int Ncalificaciones =0;
+            //Console.WriteLine("Cuantas calificaciones va a promediar");
+            //Ncalificaciones = Convert.ToInt32(Console.ReadLine());
+            //int cal=0, prom=0;
+            //for (int i = 1; i <= Ncalificaciones; i++)
+            //{
+            //    //instrucciones que se repiten
+            //    Console.WriteLine("Ingresa Calificacion " + i);
+            //    cal = int.Parse(Console.ReadLine());
+            //    prom = prom + cal;
+            //   // i = i+2;
+            //   //i += 10;
+            //}
+            //prom = prom / Ncalificaciones;
+            //Console.WriteLine("tu promedio es " + prom);
 
-            int cal=0, prom=0;
-            for (int i = 1; i <= Ncalificaciones; i++)
+            //EJEMPLO 2
+            //for (int i = 10; i > 0; i--)
+            //{
+
+            //    if (i == 5)
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine("El valor de i es " + i);
+            //    //if (i == 6)
+            //    //{
+            //    //    continue;
+            //    //}
+            //    //Console.WriteLine("El valor de i es " + i);
+            //} 
+            #endregion
+
+            #region CICLO WHILE
+            //int i = -1;
+            //while (i!=-1)
+            //{
+            //    //instrucciones a repetir
+            //    Console.WriteLine("Ingresa un numero ");
+            //    i = int.Parse(Console.ReadLine());
+            //} 
+            #endregion
+
+            #region CICLO DO WHILE
+            int i = -1;
+            do
             {
-                //instrucciones que se repiten
-                Console.WriteLine("Ingresa Calificacion " + i);
-                cal = int.Parse(Console.ReadLine());
-                prom = prom + cal;
-               // i = i+2;
-               //i += 10;
-            }
-            prom = prom / Ncalificaciones;
-            Console.WriteLine("tu promedio es " + prom);
+                //instrucciones a repetir
+                Console.WriteLine("Ingresa un numero ");
+                i = int.Parse(Console.ReadLine());
+            } while (i != -1); 
+            #endregion
+
             Console.ReadKey();
         }
     }
